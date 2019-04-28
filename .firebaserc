@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "britecore-frontend"
+  },
+  "targets": {
+    "britecore-frontend": {
+      "hosting": {
+        "signzy": [
+          "signzy-api-doc"
+        ]
+      }
+    }
+  }
+}

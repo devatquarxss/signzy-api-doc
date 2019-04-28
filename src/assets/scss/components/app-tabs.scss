@@ -1,0 +1,33 @@
+.app-tab {
+
+  .tabs-container {
+    display: flex;
+
+    .tab-container {
+      .tab {
+        padding: {
+          left: 0.2em;
+          right: 0.2em;
+        };
+
+        cursor: pointer;
+
+        font: {
+          size: 1em;
+        }
+      }
+
+      .selected-tab {
+        border-bottom: 2px solid orange;
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      .unselected-tab {
+        border-bottom: none;
+        font-weight: 400;
+        color: rgba(225, 225, 225, 0.9);
+      }
+    }
+  }
+}

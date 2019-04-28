@@ -1,0 +1,12 @@
+.app-drawer {
+  height: 100vh;
+  background: #424242;
+
+  padding-top: 1.5em;
+
+  .item-sub, .item {
+    cursor: pointer;
+    color: #ffffff;
+    padding-left: 0.5em;
+  }
+}

@@ -1,0 +1,54 @@
+.doc-default-page {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  background: #424242;
+
+  .api-main-container {
+
+
+    .api-sub-container {
+
+      .api-row-content {
+        padding: 0.5em 1.2em;
+        background: #f3f7f9;
+
+        font: {
+          size: 1em;
+          weight: 400;
+        };
+        color: #333333;
+      }
+
+      @media screen and (max-width: 600px) { // mobile & tab
+        // ...
+      }
+
+      @media screen and (min-width: 601px) { // mobile & tab
+        display: flex;
+        align-items: flex-start;
+
+        .text-container {
+          width: 50%;
+        }
+
+        .code-container {
+          width: 50%;
+        }
+      }
+
+      .code-container { // mobile, tab & desktop
+
+        .highlight-code {
+          margin: 0;
+          padding: 0;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+
+

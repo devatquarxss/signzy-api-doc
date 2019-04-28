@@ -1,0 +1,33 @@
+<!-- Api header -->
+          <app-header :text="api.header" />
+          <!-- /Api header -->
+
+          <!-- Api desc -->
+          <div class="app-desc" v-html="api.desc">
+
+          </div>
+          <!-- /Api desc -->
+
+          <!-- Api code snippet -->
+          <app-code-snippet code="abc"/>
+          <!-- /Api code snippet -->
+
+          <!-- Api highlight -->
+          <AppHighlight
+            backgroundColor="red"
+            icon="https://img.icons8.com/ios/50/000000/plus-filled.png"
+            htmlColor="#ffffff"
+          >
+            some notification <AppCodeSnippet code="abc"/> text
+          </AppHighlight>
+          <!-- /Api highlight -->
+
+          <!-- Api table -->
+          <app-table
+            :headers="[ { text: 'Calories', value: 'calories', sortable: false } ]"
+            :items="[ { calories: 159 } ]"
+          />
+          <!-- /Api table -->
+
+          padding: 0.8em 1.6em;
+            background: #c8d7e2;
