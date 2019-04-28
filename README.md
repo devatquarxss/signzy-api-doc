@@ -22,8 +22,8 @@ $ npm run dev
 ```
 
 ## Components
+### HEADER Component
 ```
-// HEADER Component
 <AppHeader :text="Authentication"/>
 
 // NORMAL TEXT Component
@@ -33,27 +33,35 @@ $ npm run dev
 
                       This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API's documentation. <span class="app-code-snippet">abc</span>"
 />
+```
 
-// CODE SNIPPET Component
-<AppCodeSnippet :code="Authorization: meowmeowmeow"/>
+### CODE SNIPPET Component
+```
+<AppCodeSnippet code="Authorization: meowmeowmeow"/>
+```
 
-// HIGHLIGHT Component
+### HIGHLIGHT Component
+```
 <AppHighlight
-  :icon="https://img.icons8.com/metro/50/000000/info.png"
+  icon="https://img.icons8.com/metro/50/000000/info.png"
   :texts="[
             { type: "normal-str", value: "You must replace" },
             { type: "snippet", value: "meowmeowmeow" },
             { type: "normal-str", value: "with your personal API key." }
           ]"
 
-  :backgroundColor="#8fbcd4"
+  backgroundColor="#8fbcd4"
   htmlColor="#F3F7F9"
 />
+```
 
-// SUBHEADING Component
-<AppSubHeading :text="HTTP Request"/>
+### SUBHEADING Component
+```
+<AppSubHeading text="HTTP Request"/>
+```
 
-// TABLE Component
+### TABLE Component
+```
 <App-table
   :headers="[
     { text: "Parameter", value: "parameter", sortable: false },
